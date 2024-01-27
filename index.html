@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreehari Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2129db25dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="assets/logo.PNG" class="logo"> -->
+                <p class="logo"></p>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#Portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I am <span>Sreehari</span><br/> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/profile.PNG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi,I am Sreehari and I work as a web developer. I am software engineer who loves
+                        to create websites as well as apps. I would like to work in groups where everyone
+                        can voice their opinions and ideas.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Client-side</span><br/>ReactJS,Javascript</li>
+                            <li><span>Server-side</span><br/>NextJS</li>
+                            <li><span>Database</span><br/>MonogoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-Current</span><br/>Tech Lead at LTIMindtree</li>
+                            <li><span>2019-2020</span><br/>Senior Frontend Developer</li>
+                            <li><span>2018-2019</span><br/>Senior Frontend Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009-2012</span><br/>MCA at SIR MVIT College</li>
+                            <li><span>2006-2009</span><br/>B.Sc at Govt Science College</li>
+                            <li><span>2006</span><br/>PUC at A.E.S National College </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Web developer description here....</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Designer</h2>
+                    <p>Web developer description here....</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>UI Desgin</h2>
+                    <p>Web developer description here....</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/blu.PNG" alt="bluApp">
+                    <div class="layer">
+                        <h3>Blu App</h3>
+                        <p>This is the Ecommerce web application to buy a vape products.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/app.PNG" alt="appPage">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>This is the Mobile application to view and buy custom office products.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/web.PNG" alt="webPage">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>This is the desktop web application to buy a Custome products.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i>sreehari572@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91 9620693686</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="/assets/SREEHARI_'V Resume.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Sreehari made with his personal interest. </p>
+        </div>
+    </div>
+    <script>
+        var tabLinks=document.getElementsByClassName("tab-links");
+        var tabContents=document.getElementsByClassName('tab-contents');
+        function openTab(tabName){
+            for(tablink of tabLinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabContents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById('sidemenu');
+        function openMenu(){
+            sidemenu.style.right="0";
+        }
+        function closeMenu(){
+            sidemenu.style.right="-200px";
+
+        }
+    </script>
+</body>
+</html>
