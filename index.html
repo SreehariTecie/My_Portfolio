@@ -11,21 +11,24 @@
     <div id="header">
         <div class="container">
             <nav>
-                <!-- <img src="assets/logo.PNG" class="logo"> -->
                 <p class="logo"></p>
                 <ul id="sidemenu">
                     <li> <a href="#header">Home</a></li>
                     <li> <a href="#about">About</a></li>
                     <li> <a href="#services">Services</a></li>
-                    <li> <a href="#Portfolio">Portfolio</a></li>
-                    <li> <a href="#contact">Contact</a></li>
+                    <li> <a href="#Portfolio">Projects</a></li>
+                    <li> <a href="assets/SREEHARI's Resume.pdf" download="" class="btn btn2" target="_blank">Download CV</a></li>
                     <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Frontend Developer</p>
-                <h1>Hi, I am <span>Sreehari</span><br/> from India</h1>
+                
+            <h1>Hi, I am <span>Sreehari</span><br/> Frontend Developer</h1>
+            </div>
+            <div class="social-icons">
+                <a href="www.linkedin.com/in/sreehari-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SreehariTecie" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>
@@ -36,11 +39,11 @@
                 <div class="about-col-1">
                     <img src="assets/profile.PNG">
                 </div>
-                <div class="about-col-2">
+                <li class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi,I am Sreehari and I work as a web developer. I am software engineer who loves
-                        to create websites as well as apps. I would like to work in groups where everyone
-                        can voice their opinions and ideas.
+                    <p>Results-driven software engineer with over 9+ years of experience in designing, developing, and maintaining complex software applications. Expertise in ReactJS, JavaScript, HTML5, Styled
+                        Components, Python, and SQL with a strong focus on delivering high-quality, efficient code. Proven ability to lead cross-functional teams and delivered results that drive business growth
+                        and innovation.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link"  onclick="openTab('skills')">Skills</p>
@@ -49,23 +52,29 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Client-side</span><br/>ReactJS,Javascript</li>
-                            <li><span>Server-side</span><br/>NextJS</li>
-                            <li><span>Database</span><br/>MonogoDB</li>
+                            <li><span>Languages</span><br/>Javascript,Typescript,HTML5,CSS3,Styled Components</li>
+                            <li><span>Libraries</span><br/>ReactJS, jQuery</li>
+                            <li><span>Framework</span><br/>NextJS</li>
+                            <li><span>Database</span><br/>MonogoDB, MySQL</li>
+                            <li><span>Version Control</span><br/>Git</li>
+                            <li><span>Tools/CMS</span><br/>Jira,Contentful,Optimove</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2020-Current</span><br/>Tech Lead at LTIMindtree</li>
-                            <li><span>2019-2020</span><br/>Senior Frontend Developer</li>
-                            <li><span>2018-2019</span><br/>Senior Frontend Developer</li>
+                            <li><span>12/2021-Current</span><br/>Senior Specialist- Software Engineer - LTIMindtree</li>
+                            <li><span>02/2021-11/2020</span><br/>Senior UI Developer - Artech Info System</li>
+                            <li><span>09/2020-01/2021</span><br/>Senior Software Engineer - DreamOrbit Softech Pvt Ltd </li>
+                            <li><span>07/2015-09/2018</span><br/>Software Engineer - Cerner India Health Services Private Limited </li>
+                            <li><span>06/2013-06/2015</span><br/>Software Engineer - Mindtree </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
+                            <li><span>2018-2019</span><br/>Second Level Master's in Sports Engineering
+at Politecnico Di Torino</li>
                             <li><span>2009-2012</span><br/>MCA at SIR MVIT College</li>
                             <li><span>2006-2009</span><br/>B.Sc at Govt Science College</li>
-                            <li><span>2006</span><br/>PUC at A.E.S National College </li>
                         </ul>
                     </div>
                 </div>
@@ -108,7 +117,16 @@
                     <div class="layer">
                         <h3>Blu App</h3>
                         <p>This is the Ecommerce web application to buy a vape products.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <a  id="openModal"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Blu E-Commerce Website</h2>
+                            <p> Description: 
+                            What Is a Project Description? A project description outlines the details of one project, including all its phases and processes involved, in a single document. It addresses the problem that initiated the project and the desired goals and objectives. But it doesn't have to stop there.</p>
+                            
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
@@ -116,7 +134,16 @@
                     <div class="layer">
                         <h3>Mobile App</h3>
                         <p>This is the Mobile application to view and buy custom office products.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <a id="openModal"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Mobile Application</h2>
+                                <p> Description: 
+                                What Is a Project Description? A project description outlines the details of one project, including all its phases and processes involved, in a single document. It addresses the problem that initiated the project and the desired goals and objectives. But it doesn't have to stop there.</p>
+                                
+                            </div>
+                            </div>
                     </div>
                 </div>
                 <div class="work">
@@ -124,38 +151,21 @@
                     <div class="layer">
                         <h3>Web App</h3>
                         <p>This is the desktop web application to buy a Custome products.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <a id="openModal"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Web Application</h2>
+                                <p> Description: 
+                                What Is a Project Description? A project description outlines the details of one project, including all its phases and processes involved, in a single document. It addresses the problem that initiated the project and the desired goals and objectives. But it doesn't have to stop there.</p>    
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn">See More</a>
         </div>
     </div>
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-envelope"></i>sreehari572@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91 9620693686</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    </div>
-                    <a href="/assets/SREEHARI_'V Resume.pdf" download="" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div class="copyright">
             <p>Copyright <i class="fa-solid fa-copyright"></i> Sreehari made with his personal interest. </p>
         </div>
@@ -182,6 +192,30 @@
         function closeMenu(){
             sidemenu.style.right="-200px";
 
+        }
+    </script>
+    <script>
+        //get the modal
+        var modal= document.getElementById("myModal");
+        //get the link that opens the modal
+        var link = document.getElementById("openModal");
+        //get the <span> element that closed the modal
+        var span = document.getElementsByClassName("close")[0];
+        //when the user clicks on the link, open the modal
+        link.onclick = function(){
+            modal.style.display="block";
+        }
+
+        //when the user clicks on <span>(x),close the modal
+            span.onclick=function(){
+                modal.style.display="none";
+            }
+
+        //when the user clicks anwhere outside the modal, close it
+        window.onclick=function(event){
+            if(event.target == modal){
+                modal.style.display="none";
+            }
         }
     </script>
 </body>
